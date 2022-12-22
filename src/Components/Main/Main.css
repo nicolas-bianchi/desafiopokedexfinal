@@ -1,0 +1,99 @@
+.gridContainer {
+  display: flex;
+  justify-content: center;
+
+}
+
+.cardContainer {
+  display: grid;
+  width: 90%;
+  row-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  justify-items: center;
+}
+
+.card {
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 1rem;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: ease 1s all;
+}
+
+.cardId {
+  display: flex;
+  justify-content: end;
+  margin: 0.5rem;
+  font-weight: 500;
+}
+
+.cardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImg img {
+  width: 60%;
+  height: auto;
+}
+
+.cardName {
+  text-align: center;
+  color: #ffff;
+  border-radius: 0 0 1rem 1rem;
+  padding: 0.5rem 0;
+}
+
+/*///////////RESPONSIVE//////////////////////////*/
+
+@media (min-width: 768px) {
+  .mainAppContainer {
+    height: 100vh;
+    background-image: url(/public/Images/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: none;
+    background-size: cover;
+  }
+
+  .gridContainer {
+    width: auto;
+  }
+
+  .cardContainer {
+    padding: 2rem;
+    display: grid;
+    width: 80%;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    backdrop-filter: blur(15px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .mainAppContainer {
+    height: 120vh;
+    background-image: url(/public/Images/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: none;
+    background-size: cover;
+  }
+
+  .gridContainer {
+    margin: 0 auto;
+    width: 70vw;
+    row-gap: 1rem;
+  }
+
+  .card {
+    backdrop-filter: blur(15px);
+  }
+
+  .card:hover {
+    transform: translateY(-5%);
+
+  }
+}

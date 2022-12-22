@@ -1,0 +1,26 @@
+ .searchBarContainer {
+     text-align: center;
+     margin-bottom: 2rem;
+ }
+
+ .searchMui {
+     width: 80%;
+ }
+
+ ::placeholder {
+     text-align: center;
+ }
+
+ @media(min-width: 1000px) {
+     .searchMui {
+         width: 55%;
+     }
+
+     ::placeholder {
+         text-align: center;
+     }
+
+     .searchBarContainer {
+         width: 100%;
+     }
+ }
